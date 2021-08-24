@@ -51,7 +51,7 @@ syntax keyword sixtyfpsType percent
 syntax keyword sixtyfpsType physical-length
 syntax keyword sixtyfpsType string
 
-syntax keyword sixtyfpsOperator + - * / += -= *= /= => <=> =
+syntax keyword sixtyfpsOperator + - * / += -= *= /= != => <=> = !
 
 syntax match sixtyfpsValueInteger "[-+]\=\d\+"
 syntax match sixtyfpsValueNumber "[-+]\=\d\+\(\.\d*\)\="
