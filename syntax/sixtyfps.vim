@@ -34,8 +34,11 @@ syntax match sixtyfpsValueLength "[-+]\=\d\+\(\.\d*\)\=%"
 syntax match sixtyfpsValueAngle "[-+]\=\d\+\(\.\d*\)\=\(deg\|turn\|rad\)\>"
 syntax match sixtyfpsValueTime "+\=\d\+\(\.\d*\)\=\(ms\|s\)\>"
 
-syn region sixtyfpsStringQQ start=+"+ skip=+\\\\\|\\"+ end=+"+
-syn region sixtyfpsStringQ start=+'+ skip=+\\\\\|\\'+ end=+'+
+syntax region sixtyfpsComment start=+//+ end=/$/
+syntax region sixtyfpsComment start=+/\*+  end=+\*/+
+
+syntax region sixtyfpsStringQQ start=+"+ skip=+\\\\\|\\"+ end=+"+
+syntax region sixtyfpsStringQ start=+'+ skip=+\\\\\|\\'+ end=+'+
 
 hi def link sixtyfpsConstant Constant
 hi def link sixtyfpsKeyword Keyword
@@ -46,5 +49,6 @@ hi def link sixtyfpsValueAngle Number
 hi def link sixtyfpsValueTime Number
 hi def link sixtyfpsStringQ String
 hi def link sixtyfpsStringQQ String
+hi def link sixtyfpsComment Comment
 
 let b:current_syntax = "sixtyfps"
