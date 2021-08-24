@@ -51,12 +51,17 @@ syntax keyword sixtyfpsType percent
 syntax keyword sixtyfpsType physical-length
 syntax keyword sixtyfpsType string
 
+syntax keyword sixtyfpsOperator + - * / += -= *= /= => <=> =
+
 syntax match sixtyfpsValueInteger "[-+]\=\d\+"
 syntax match sixtyfpsValueNumber "[-+]\=\d\+\(\.\d*\)\="
 syntax match sixtyfpsValueLength "[-+]\=\d\+\(\.\d*\)\=\(mm\|cm\|in\|pt\|px\)\>"
 syntax match sixtyfpsValueLength "[-+]\=\d\+\(\.\d*\)\=%"
 syntax match sixtyfpsValueAngle "[-+]\=\d\+\(\.\d*\)\=\(deg\|turn\|rad\)\>"
 syntax match sixtyfpsValueTime "+\=\d\+\(\.\d*\)\=\(ms\|s\)\>"
+
+syntax match sixtyfpsProperty "[a-zA-Z_][a-zA-Z_\-0-9]* *:"
+syntax match sixtyfpsStorage "[a-zA-Z_][a-zA-Z_\-0-9]* *:="
 
 syntax region sixtyfpsComment start=+//+ end=/$/
 syntax region sixtyfpsComment start=+/\*+  end=+\*/+
@@ -75,5 +80,8 @@ hi def link sixtyfpsValueInteger Number
 hi def link sixtyfpsValueLength Number
 hi def link sixtyfpsValueNumber Number
 hi def link sixtyfpsValueTime Number
+hi def link sixtyfpsProperty StorageClass
+hi def link sixtyfpsStorage StorageClass
+hi def link sixtyfpsOperator Operator
 
 let b:current_syntax = "sixtyfps"
