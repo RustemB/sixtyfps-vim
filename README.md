@@ -31,3 +31,6 @@ cargo install sixtyfps-lsp
 `(TODO: Add instructions to setup lsp)`
 
 # Formatting code (WIP: not yet functional)
+
+# Links
+- [SixtyFPS's GitHub Repo](https://github.com/sixtyfpsui/sixtyfps)
