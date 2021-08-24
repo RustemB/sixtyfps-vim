@@ -1,6 +1,9 @@
 # `The .60 Markup Language` syntax highlight for Vim
 
-This is basic implementation of `The .60 Markup Language` syntax highlight for Vim.
+This is basic implementation of `The .60 Markup Language` syntax
+highlight for Vim.
+
+![screenshot](https://i.imgur.com/WkgvwPg.png)
 
 # Install
 
@@ -8,13 +11,13 @@ This is basic implementation of `The .60 Markup Language` syntax highlight for V
 
 ### `vim-plug`
 
-```vim
+``` vim
 Plug 'RustemB/sixtyfps-vim'
 ```
 
 ### `packer.nvim`
 
-```lua
+``` lua
 use 'RustemB/sixtyfps-vim'
 ```
 
@@ -24,7 +27,7 @@ You can also setup LSP using your favorite LSP client for vim or neovim
 
 ## Install LSP using `cargo`
 
-```sh
+``` sh
 cargo install sixtyfps-lsp
 ```
 
@@ -33,4 +36,5 @@ cargo install sixtyfps-lsp
 # Formatting code (WIP: not yet functional)
 
 # Links
-- [SixtyFPS's GitHub Repo](https://github.com/sixtyfpsui/sixtyfps)
+
+- [SixtyFPS’s GitHub Repo](https://github.com/sixtyfpsui/sixtyfps)
