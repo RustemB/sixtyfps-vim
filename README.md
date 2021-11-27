@@ -31,7 +31,21 @@ You can also setup LSP using your favorite LSP client for vim or neovim
 cargo install sixtyfps-lsp
 ```
 
-`(TODO: Add instructions to setup lsp)`
+## Setup LSP
+### NeoVim (>=0.5) using built-in lsp
+1. install `neovim/nvim-lspconfig` using your fav package manager
+2. add to your lua config
+```lua
+require'lspconfig'.sixtyfps.setup{}
+```
+or to your viml config
+```vim
+lua << EOF
+require'lspconfig'.sixtyfps.setup{}
+EOF
+```
+
+###### TODO: Add instruction to install lsp w/o compiling
 
 # Formatting code (WIP: not yet functional)
 
